@@ -252,3 +252,14 @@ button.current:hover {
     align-items: flex-start;
     justify-content: start;
 }
+
+.bottom-link {
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 13px;
+}
+
+.signature {
+    font-weight: 600;
+}
