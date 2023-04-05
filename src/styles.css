@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 740px;
+    height: 450px;
+    border: 3px solid #000000;
+    border-radius: 210px;
+    padding: 30px;
+    margin: 20px 20px;
+}
+
+.input-field {
+    border: none;
+    border-bottom: 2px solid #000000;
+    margin-right: 5px;
+    width: 335px;
+}
+
+button {
+    color: #e6e8ee;
+    text-decoration: none;
+    background: #6c7183;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #6c7183;
+    padding: 6px 16px;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+    color: #3f4146;
+    background-color: #e6e8ee;
+    cursor: pointer;
+
+}
+
+button.current {
+    background: #29743b;
+    margin-left: 5px;
+}
+
+button.current:hover {
+    color: #3f4146;
+    background-color: #8ff6a9;
+    cursor: pointer;
+}
+
+.form-enter {
+    display: flex;
+    justify-content: center;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+
+.today-wrapper {
+    display: flex;
+    justify-content: center;
+    /* padding: 6px; */
+    width: 50%;
+}
+
+.tomorrow-wrapper {
+    width: 20%;
+}
+
+.today-wrapper,
+.tomorrow-wrapper {
+    border: 2px solid #000000;
+}
+
+.today-left {
+    padding-right: 25px;
+}
+
+.today-title p,
+.tomorrow p.tomorrow-text {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+
+.today-right {
+    padding: 0 10px;
+}
+
+.today-icon-wrap i {
+    font-size: 30px;
+    padding: 17px;
+    color: #1324d8;
+}
+
+.fa-cloud-sun {
+    color: #c2b84c;
+}
+
+.fa-sun {
+    color: #ffb300;
+}
+
+.fa-cloud-rain {
+    color: #6972b8;
+}
+
+.fa-cloud-showers-heavy {
+    color: #6513d8;
+}
+
+.empty {
+    width: 60px;
+}
+
+.today-icon-wrap {
+    border: 2px solid #000000;
+    padding: 12px 12px;
+    border-radius: 70px;
+}
+
+.today-city,
+#current-city {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 2px;
+}
+
+.today-date p,
+.tomorrow p.tomorrow-date,
+#current-date {
+    font-size: 15px;
+    text-align: center;
+    /* padding: 7px 0 5px 0; */
+}
+
+.today-date p,
+#current-date {
+    margin: 0;
+    line-height: 15px;
+}
+
+.tomorrow p.tomorrow-date {
+    margin-bottom: 0;
+    line-height: 28px;
+}
+
+.tomorrow p.tomorrow-date .today-date p,
+#current-date {
+    font-weight: 500;
+}
+
+.today-weather p,
+.today-weather-value {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.today-weather-value {
+    padding-left: 28px;
+    line-height: 60px;
+}
+
+.units {
+    position: relative;
+    top: -6px;
+}
+
+.today-weather-description {
+    font-size: 15px;
+    line-height: 1px;
+    text-align: center;
+}
+
+.tomorrow p.tomorrow-text {
+    margin: 0;
+    line-height: 50px;
+}
+
+.tomorrow i.tomorrow-icon {
+    font-size: 22px;
+    display: block;
+    text-align: center;
+}
+
+.tomorrow p.tomorrow-weather {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+.other-days-wrap {
+    border: 2px solid #000000;
+}
+
+.other-days-wrap.one,
+.other-days-wrap.five {
+    width: 110%;
+}
+
+.other-days-wrap.one {
+    position: relative;
+    right: 8px;
+}
+
+.other-days-date.one {
+    position: relative;
+    right: 3px;
+}
+
+.other-days p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.other-days-date p {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.other-days-icon {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.other-days i {
+    font-size: 22px;
+}
+
+.col-3.first {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.col-3.last {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/styles.css" class="css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/153cd37235.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="wrapper">
+
+            <form class="form-enter" id="submit-form">
+                <input type="text" placeholder="Enter city" class="input-field" id="city-enter">
+                <button>Search</button>
+                <button class="current" id="current-button">Current</button>
+            </form>
+
+            <div class="middle">
+                <div class="today-wrapper">
+                    <div class="today">
+                        <div class="today-left">
+                            <div class="today-title">
+                                <p class="today-text">Today</p>
+                            </div>
+                            <div class="today-icon">
+                                <div class="today-icon-wrap">
+                                    <i class="fa-solid fa-cloud-sun-rain icon-today"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-right">
+                        <div class="today-left-wrapper">
+                            <div class="today-city">
+                                <p id="current-city">Thessaloniki</p>
+                            </div>
+                            <div class="today-date">
+                                <p id="current-date">FRI</p>
+                            </div>
+                            <div class="today-weather">
+                                <span class="today-weather-value" id="temperature">18 °C</span>
+                                <span class="units">
+                                    <!-- <a href="#" id="celsius">°C</a> -->
+                                    <!-- | 
+                                    <a href="#" id="fahrenheit">°F</a> -->
+                                </span>
+                            </div>
+                            <div class="today-weather-description">
+                                <p id="description">Clear</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty">
+                </div>
+                <div class="tomorrow-wrapper">
+                    <div class="tomorrow">
+                        <p class="tomorrow-text">Tomorrow</p>
+                        <i class="fa-solid fa-cloud-sun tomorrow-icon"></i>
+                        <p class="tomorrow-date">SAT / 11.03</p>
+                        <p class="tomorrow-weather">20 °C / 68 °F</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 first">
+                        <div class="other-days">
+                            <div class="other-days-date one">
+                                <p>SUN / 12.03</p>
+                            </div>
+                            <div class="other-days-wrap one">
+                                <div class="other-days-icon">
+                                    <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                                <p>14 °C / 57 °F</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="other-days">
+                            <div class="other-days-date">
+                                <p>MON / 13.03</p>
+                            </div>
+                            <div class="other-days-wrap">
+                                <div class="other-days-icon">
+                                    <i class="fa-solid fa-sun"></i>
+                                </div>
+                                <p>16 °C / 60 °F</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="other-days">
+                            <div class="other-days-date">
+                                <p>TUE / 14.03</p>
+                            </div>
+                            <div class="other-days-wrap">
+                                <div class="other-days-icon">
+                                    <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                                <p>16 °C / 61 °F</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="other-days">
+                            <div class="other-days-date">
+                                <p>WED / 15.03</p>
+                            </div>
+                            <div class="other-days-wrap">
+                                <div class="other-days-icon">
+                                    <i class="fa-solid fa-cloud-rain"></i>
+                                </div>
+                                <p>15 °C / 59 °F</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 last">
+                        <div class="other-days">
+                            <div class="other-days-date">
+                                <p>THU / 16.03</p>
+                            </div>
+                            <div class="other-days-wrap five">
+                                <div class="other-days-icon">
+                                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                                </div>
+                                <p>14 °C / 58 °F</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
