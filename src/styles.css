@@ -79,15 +79,16 @@ button.current:hover {
 
 .today-left {
     padding-right: 25px;
+    align-items: center;
 }
 
-.today-title p,
+.today-city p,
 .tomorrow p.tomorrow-text {
     font-size: 17px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 6px;
+    /* margin-top: 6px; */
 }
 
 .today-right {
@@ -97,7 +98,6 @@ button.current:hover {
 .today-icon-wrap i {
     font-size: 30px;
     padding: 17px;
-    color: #1324d8;
 }
 
 .fa-cloud-sun {
@@ -121,18 +121,22 @@ button.current:hover {
 }
 
 .today-icon-wrap {
-    border: 2px solid #000000;
-    padding: 12px 12px;
-    border-radius: 70px;
+    padding: 4px 18px;
 }
 
-.today-city,
+.icon-today {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* .today-city, */
 #current-city {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    line-height: 35px;
-    margin-top: 2px;
+    line-height: 40px;
+    margin: 0px;
 }
 
 .today-date p,
@@ -143,10 +147,20 @@ button.current:hover {
     /* padding: 7px 0 5px 0; */
 }
 
-.today-date p,
-#current-date {
+/* .today-date p {
     margin: 0;
     line-height: 15px;
+} */
+
+.today-weather {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+#current-date {
+    line-height: 42px;
+    margin: 0;
 }
 
 .tomorrow p.tomorrow-date {
@@ -177,8 +191,27 @@ button.current:hover {
 
 .today-weather-description {
     font-size: 15px;
-    line-height: 1px;
+    /* line-height: 1px; */
     text-align: center;
+}
+
+#description {
+    margin: 0;
+}
+
+#description::first-letter {
+    text-transform: capitalize;
+}
+
+.weather-values ul {
+    margin: 0;
+    line-height: 21px;
+}
+
+.weather-values li {
+    list-style: none;
+    margin-left: -30px;
+    font-size: 15px;
 }
 
 .tomorrow p.tomorrow-text {
@@ -253,13 +286,11 @@ button.current:hover {
     justify-content: start;
 }
 
-.bottom-link {
-    text-align: center;
-    position: relative;
-    top: 60px;
-    font-size: 13px;
+.today-weather .active {
+    color: #000000;
+    cursor: default;
 }
 
-.signature {
-    font-weight: 600;
+.today-weather .active:hover {
+    text-decoration: none;
 }

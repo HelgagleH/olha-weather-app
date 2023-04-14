@@ -20,41 +20,48 @@
             <form class="form-enter" id="submit-form">
                 <input type="text" placeholder="Enter city" class="input-field" id="city-enter">
                 <button>Search</button>
-                <button class="current" id="current-button">Current</button>
+                <!-- <button class="current" id="current-button">Current</button> -->
             </form>
 
             <div class="middle">
                 <div class="today-wrapper">
                     <div class="today">
                         <div class="today-left">
-                            <div class="today-title">
-                                <p class="today-text">Today</p>
+                            <div class="today-city">
+                                <p id="current-city">Thessaloniki</p>
                             </div>
                             <div class="today-icon">
-                                <div class="today-icon-wrap">
-                                    <i class="fa-solid fa-cloud-sun-rain icon-today"></i>
+                                <div class="d-flex today-icon-wrap">
+                                    <img src="#" alt="Weather img" id="icon" class="icon-today" />
+                                    <!-- <i class="fa-solid fa-cloud-sun-rain icon-today"></i> -->
                                 </div>
+                            </div>
+                            <div class="today-weather-description">
+                                <p id="description">Clear</p>
                             </div>
                         </div>
                     </div>
                     <div class="today-right">
                         <div class="today-left-wrapper">
                             <div class="today-city">
-                                <p id="current-city">Thessaloniki</p>
+
                             </div>
                             <div class="today-date">
                                 <p id="current-date">FRI</p>
                             </div>
                             <div class="today-weather">
-                                <span class="today-weather-value" id="temperature">18 °C</span>
+                                <span class="today-weather-value" id="temperature">18</span>
                                 <span class="units">
-                                    <!-- <a href="#" id="celsius">°C</a> -->
-                                    <!-- | 
-                                    <a href="#" id="fahrenheit">°F</a> -->
+                                    <a href="#" id="celsius" class="active">°C</a>
+                                    |
+                                    <a href="#" id="fahrenheit">°F</a>
                                 </span>
                             </div>
-                            <div class="today-weather-description">
-                                <p id="description">Clear</p>
+                            <div class="weather-values">
+                                <ul>
+                                    <li id="humidity" class="humidity-value">Humidity: 50 %</li>
+                                    <li id="wind" class="wind-value">Wind: 1 km/h</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -141,13 +148,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="bottom-link">
-                <a href="https://github.com/HelgagleH/first-repository" target="_blank" rel="noreferrer">Open-source
-                    code</a>
-                <span class="signature">
-                    by Olha Dashchynska
-                </span>
             </div>
         </div>
     </div>
