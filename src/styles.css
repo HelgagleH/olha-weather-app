@@ -294,3 +294,14 @@ button.current:hover {
 .today-weather .active:hover {
     text-decoration: none;
 }
+
+.bottom-link {
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 13px;
+}
+
+.signature {
+    font-weight: 600;
+}
