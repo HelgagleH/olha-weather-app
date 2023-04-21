@@ -235,11 +235,19 @@ button.current:hover {
     margin-top: 30px;
 }
 
-/* .other-days-wrap {
-    /* border: 2px solid #000000; */
+.other-days {
+    font-size: 12px;
 }
 
-*/ .other-days-wrap.one,
+.weather-forecast-temperatures {
+    font-size: 8px;
+}
+
+/* .other-days-wrap {
+     border: 2px solid #000000; 
+}
+
+.other-days-wrap.one,
 .other-days-wrap.five {
     width: 110%;
 }
@@ -272,7 +280,7 @@ button.current:hover {
 
 .other-days i {
     font-size: 22px;
-}
+} */
 
 .col-3.first {
     display: flex;
