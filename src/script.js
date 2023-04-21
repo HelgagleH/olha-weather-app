@@ -61,33 +61,10 @@ function handleSubmit(event) {
     search(cityInputElement.value);
 }
 
-function displayFahrenheitTemperature(event) {
-    event.preventDefault();
-    let temperatureElement = document.querySelector("#temperature");
-    celsiusValue.classList.remove("active");
-    fahrenheitValue.classList.add("active");
-    let fahrenheitTemparature = (celsiusTemperature * 9) / 5 + 32;
-    temperatureElement.innerHTML = Math.round(fahrenheitTemparature);
-}
-
-function displayCelsiusTemperature(event) {
-    event.preventDefault();
-    celsiusValue.classList.add("active");
-    fahrenheitValue.classList.remove("active");
-    let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
 let form = document.querySelector("#submit-form");
 form.addEventListener("submit", handleSubmit);
 
 let celsiusTemperature = null;
-
-let fahrenheitValue = document.querySelector("#fahrenheit");
-fahrenheitValue.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusValue = document.querySelector("#celsius");
-celsiusValue.addEventListener("click", displayCelsiusTemperature);
 
 search("Thessaloniki");
 
